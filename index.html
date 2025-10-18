@@ -1,31 +1,69 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
 <body>
-  <h1>やった！最初の一歩🚀</h1>
-  <p>ここまで来たら勝ち。次にデザインを足していこう。</p>
-<div class="grid">
-  <figure>
-    <img src="./_M3A1635.jpg" alt="作品1">
-    <figcaption>（キャプション1）</figcaption>
-  </figure>
-  <figure>
-    <img src="./_M3A9330.jpg" alt="作品2">
-    <figcaption>（キャプション2）</figcaption>
-  </figure>
-  <figure>
-    <img src="./_M3A9780.jpg" alt="作品3">
-    <figcaption>（キャプション3）</figcaption>
-  </figure>
-</div>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">竜弥 <span class="dot">•</span> Portfolio</div>
+      <nav class="nav">
+        <a href="#works">Works</a>
+        <a href="#about">Profile</a>
+        <a href="https://www.instagram.com/ksr_2000_/" target="_blank" rel="noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>静けさのあと、光がひらく</h1>
+      <p>湖面の反射、雲海の縁、夕日の瞬き。旅の記録をピクセルに。</p>
+      <a href="#works" class="btn">作品へ</a>
+    </div>
+  </section>
 
+  <!-- Works -->
+  <main id="works" class="section container">
+    <h2 class="section-title">Works</h2>
 
+    <div class="grid">
+      <figure class="card">
+        <img src="./_M3A1635.jpg" alt="高ボッチ高原 — 雲上の道" loading="lazy">
+        <figcaption>高ボッチ高原 — 雲上の道</figcaption>
+      </figure>
 
+      <figure class="card">
+        <img src="./_M3A9330.jpg" alt="円月島 — 夕景" loading="lazy">
+        <figcaption>円月島 — 夕景</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="./_M3A9780.jpg" alt="彼岸花と湖面の朝" loading="lazy">
+        <figcaption>彼岸花と湖面の朝</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <!-- Profile -->
+  <section id="about" class="section container">
+    <h2 class="section-title">Profile</h2>
+    <p>愛知発。岩×海×朝夕日、霧や反射の瞬間が好き。工場改善×写真で“精度のある美しさ”を追求中。</p>
+    <ul class="facts">
+      <li>Body: Canon EOS R6 他</li>
+      <li>Lens: RF 14–35 / 70–200 / 100–500</li>
+      <li>Edit: Lightroom, DaVinci Resolve</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="y"></span> 竜弥</small>
+    </div>
+  </footer>
+
+  <!-- Lightbox (modal) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <img alt="">
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>
