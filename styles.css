@@ -1,0 +1,15 @@
+body {
+  background: #0c0d0f;
+  color: #e6e6e6;
+  font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+h1 {
+  color: #79ffe1;
+}
+p {
+  color: #a3a3a3;
+  font-size: 18px;
+}
+
